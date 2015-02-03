@@ -15,3 +15,4 @@ WORKDIR /opt/grafana
 EXPOSE 8003
 ENTRYPOINT ["/usr/local/bin/start.sh"]
 CMD []
+ENV GIT_COMMIT unknown
