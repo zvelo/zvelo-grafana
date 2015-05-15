@@ -1,6 +1,7 @@
 [Unit]
 Description=zvelo-grafana service
-After=docker.service
+After=docker.service etcd2.service
+Requires=docker.service etcd2.service
 
 [Service]
 User=core
